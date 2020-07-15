@@ -1,6 +1,6 @@
 # GLUT
 
-## Install the GLUT Library
+## Install the GLUT Library (optional when using the c HsGLUT linkage file)
 
 ```
 $ cabal install GLFW-0.5.2.5
@@ -22,6 +22,12 @@ $ ghc HsGLUT.c GLUT2.hs
 
 ```
 $ ./GLUT
+```
+
+## Uninstall GLFW
+
+```
+$ ghc-pkg unregister GLFW-0.5.2.
 ```
 
 # References
