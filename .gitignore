@@ -3,5 +3,11 @@ dist-newstyle
 .idea
 
 # GLUT example
-*/*.o
+*.o
 GLUT
+
+# Binaries using MUI
+
+*.hi
+MUIExamples1
+MUIExamples2
