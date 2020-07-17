@@ -20,7 +20,7 @@ Based on your test use the desired switch on the command line
 > main = do  
 >    args <- getArgs
 >    case args of 
->      x:xs 
+>      x:_
 >         | x == "mui0" -> mui0
 >         | x == "mui1" -> mui1
 >         | x == "mui2" -> mui2
