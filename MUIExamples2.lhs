@@ -11,13 +11,22 @@ The easiest way to try compiling a MUI to executable the first time is to use on
 > module Main where
 > import HSoM.Examples.MUIExamples2
 
-Based on your test uncomment the below lines to reach the desired main
+Based on your test use the desired switch on the command line
 
-> main = buildChord
+> import System.Environment
+> import Data.List
 
--- > main = bifurcate
-
--- > main = echo
+> main :: IO ()
+> main = do
+>    args <- getArgs
+>    case args of
+>      x:xs
+>         | x == "buildChord" -> buildChord
+>         | x == "bifurcate" -> bifurcate
+>         | x == "echo" -> echo
+>      _ -> do
+>         name <- getProgName
+>         putStrLn $ "usage: " ++ name ++ " <string>" ++ " where" ++ " <string> equals bifurcate or echo"
 
 Then, run compile this program to executable from a terminal with:
 
@@ -25,5 +34,5 @@ ghc MUIExamples2.lhs
 
 and then run it with this.
 
-./MUIExamples2
+./MUIExamples2 echo
 

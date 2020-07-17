@@ -11,23 +11,27 @@ The easiest way to try compiling a MUI to executable the first time is to use on
 > module Main where
 > import HSoM.Examples.MUIExamples1
 
-Based on your test uncomment the below lines to reach the desired main
+Based on your test use the desired switch on the command line
 
--- > main = mui0
+> import System.Environment
+> import Data.List  
 
--- > main = mui1
-
--- > main = mui2
-
--- > main = mui3
-
--- > main = mui4
-
--- > main = mui'4
-
--- > main = mui0
-
-> main = colorSwatch
+> main :: IO ()
+> main = do  
+>    args <- getArgs
+>    case args of 
+>      x:xs 
+>         | x == "mui0" -> mui0
+>         | x == "mui1" -> mui1
+>         | x == "mui2" -> mui2
+>         | x == "mui3" -> mui3
+>         | x == "mui4" -> mui4
+>         | x == "mui'4" -> mui'4
+>         | x == "mui5" -> mui5
+>         | x == "colorSwatch" -> colorSwatch
+>      _ -> do
+>         name <- getProgName
+>         putStrLn $ "usage: " ++ name ++ " <string>" ++ " where" ++ " <string> equals mui0 or colorSwatch"
 
 Then, run compile this program to executable from a terminal with:
 
@@ -35,5 +39,5 @@ ghc MUIExamples1.lhs
 
 and then run it with this.
 
-./MUIExamples1
+./MUIExamples1 mui0
 

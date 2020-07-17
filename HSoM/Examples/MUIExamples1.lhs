@@ -59,7 +59,7 @@
 >     mo    <- selectOutput  -< ()
 >     outA  -< (mi,mo)
 
-> mui'4 = runMUI  (defaultMUIParams 
+> mui'4 = runMUI  (defaultMUIParams
 >                     {  uiTitle  = "MIDI Input / Output UI", 
 >                        uiSize   = (200,200)})
 >                 ui4
@@ -72,6 +72,8 @@
 >     f       <- title "Tempo" (hSlider (1,10) 1) -< ()
 >     tick    <- timer -< 1/f
 >     midiOut -< (devid, fmap (const [ANote 0 ap 100 0.1]) tick)
+
+> mui5  = runMUI' ui5
 
 > colorSwatchUI :: UISF () ()
 > colorSwatchUI = setSize (300, 220) $ pad (4,0,4,0) $ leftRight $ 
