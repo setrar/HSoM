@@ -2,7 +2,8 @@
 
 > import Euterpea
 
-> sineTable     = tableSinesN 16384 [1]
+> sineTable :: Table
+> sineTable = tableSinesN 4096 [1]
 
 > sine440 :: AudSF () Double
 > sine440 =
