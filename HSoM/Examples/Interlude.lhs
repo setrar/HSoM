@@ -52,6 +52,8 @@
 >               in instrument  RhodesPiano 
 >                              (tempo t (bassLine :=: mainVoice))
 
+> midi = writeMidi "HSoM/Examples/docs/childSong6.mid" $ cut 24 childSong6
+
 > prefixes         :: [a] -> [[a]]
 > prefixes []      =  []
 > prefixes (x:xs)  =  let f pf = x:pf

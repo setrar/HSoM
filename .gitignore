@@ -1,4 +1,4 @@
-dist-newstyle
+dist*
 
 .idea
 
@@ -11,3 +11,5 @@ GLUT
 *.hi
 MUIExamples1
 MUIExamples2
+
+.DS_Store
