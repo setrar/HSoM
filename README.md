@@ -12,7 +12,7 @@ $ brew cask install vmpk
 ```
 
 ```
-$  cabal v1-install Euterpea UISF
+$  cabal v1-install Euterpea UISF pure-fft
 ```
 
 In `ghci` load `MusicToSignal` program file and run main. The program will generate a file `song.wav`.
