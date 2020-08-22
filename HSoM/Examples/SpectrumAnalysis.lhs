@@ -55,3 +55,13 @@
 > {-# LINE 757 "SpectrumAnalysis.lhs" #-}
 > mkPolars :: [Complex Double] -> [Complex Double]
 > mkPolars = map ((\(m,p)-> m:+p) . polar)
+
+Running the examples
+
+*HSoM.Examples.SpectrumAnalysis> printComplexL $ mkPolars $ dft $ x1 16
+
+*HSoM.Examples.SpectrumAnalysis> printComplexL $ dft $ x1 11
+
+*HSoM.Examples.SpectrumAnalysis> printComplexL $ dft $ mkPulse 16
+
+*HSoM.Examples.SpectrumAnalysis> printComplexL $ dft $ mkxc 16

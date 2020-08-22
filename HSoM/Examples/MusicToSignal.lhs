@@ -64,7 +64,7 @@ of channels, but renderSF supports both mono or stereo instruments
 (and any instrument that produces samples in the AudioSample type class).
 The outFile function will produce a monaural or stereo file accordingly.
 
-> recordSong = uncurry (outFile "song.wav") (renderSF childSong6 myMap)
+> recordSong = uncurry (outFile "HSoM/Examples/docs/childrenSong6.wav") (renderSF childSong6 myMap)
 
 > main = recordSong
 
