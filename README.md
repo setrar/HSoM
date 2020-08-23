@@ -24,3 +24,7 @@ Prelude> :l HSoM/Examples/MusicToSignal.lhs
 
 
 Page `xvi`: Tom Makucevich, ... Watching him toil endlessly with low-level [`csound`](https://csound.com/) programs ... Additionally, Matt Zamec helped me greatly in the creation of [HasSound](https://www.cs.yale.edu/homes/hudak-paul/CS431F06/HasSoundManual.html)
+
+[Haskore music notation-an algebra of music](docs/10.1.1.36.8687.pdf)
+
+https://dl.acm.org/doi/10.1145/3331543.3342584
