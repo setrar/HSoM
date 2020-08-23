@@ -21,3 +21,6 @@ In `ghci` load `MusicToSignal` program file and run main. The program will gener
 Prelude> :l HSoM/Examples/MusicToSignal.lhs
 *HSoM.Examples.MusicToSignal> main
 ```
+
+
+Page `xvi`: Tom Makucevich, ... Watching him toil endlessly with low-level [`csound`](https://csound.com/) programs ... Additionally, Matt Zamec helped me greatly in the creation of [HasSound](https://www.cs.yale.edu/homes/hudak-paul/CS431F06/HasSoundManual.html)
