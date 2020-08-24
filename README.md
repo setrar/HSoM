@@ -5,11 +5,22 @@
 GUI https://gitlab.haskell.org/ghc/ghc/-/issues/13730
 
 
-Virtual MIDI Keyboard 
+:bookmark: For MacOS
+
+- [ ] Virtual MIDI Keyboard 
 
 ```
 $ brew cask install vmpk
 ```
+
+- [ ] SimpleSynth
+
+
+```
+$ brew cask install SimpleSynth
+```
+
+### Install Euterpea Libraries
 
 ```
 $  cabal v1-install Euterpea UISF pure-fft
