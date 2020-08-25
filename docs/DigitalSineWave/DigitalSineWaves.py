@@ -13,9 +13,9 @@ def makeWave(length, amp, freq, phase, rate=44100):
 # In a second period what can we achieve
 
 period = 1.0 # In seconds
+pitchfrequency = 440.0 # Concert Pitch
 amplitude = 1.0
 phase = 0
-pitchfrequency = 440.0 # Concert Pith
 
 # Case 1
 # samplerate = 44100 # Sample per second
