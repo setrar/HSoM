@@ -1,3 +1,3 @@
 # Documentation
 
-# [Digital Sign Waves](DigitalSignWave]
+# [Digital Sign Waves](DigitalSignWave)
