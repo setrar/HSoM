@@ -6,18 +6,41 @@ import scipy.io.wavfile as wav
 
 def makeWave(length, amp, freq, phase, rate=44100):
    input = np.arange(0.0, length, 1.0/rate)
+   print("Sample Array Length and Values: "); print( len(input)) ; print(input)
    result = amp * np.sin(2*np.pi * freq * input + phase)
    return result
 
-# wave = makeWave(2.0, 1.0, 440.0, 0, 44100)
-# wav.write("test.wav", 44100, wave)
+# In a second period what can we achieve
 
-# wave = makeWave(1.0, 1.0, 440.0, 0, 4410)
-# wav.write("test.wav", 4410, wave)
+period = 1.0 # In seconds
+amplitude = 1.0
+phase = 0
+pitchfrequency = 440.0 # Concert Pith
 
+# Case 1
+# samplerate = 44100 # Sample per second
+# wave = makeWave(period, amplitude, pitchfrequency, phase, samplerate)
 
-# wave = makeWave(1.0, 1.0, 440.0, 0, 3)
-# wav.write("test.wav", 3, wave)
+# Case 2
+# samplerate = 1000 # Sample per second
+# period = 1.0 # In seconds
+# phase = 0.5*np.pi # causing anti-aliasing
+# wave = makeWave(period, amplitude, pitchfrequency, phase, samplerate)
 
-wave = makeWave(1.0, 1.0, 440.0, 0, 10)
-wav.write("test.wav", 10, wave)
+# Case 3
+# samplerate = 440 # Sample per second
+# pitchfrequency = 294.0 # D3
+
+# Case 4
+samplerate = 440 # same sample rate as pitch frequency
+
+# Case 5
+# samplerate = 3 # Sample per second
+# amplitude = 2.0
+
+# Case 6
+# samplerate = 10 # Sample per second
+
+# Main Program
+wave = makeWave(period, amplitude, pitchfrequency, phase, samplerate)
+wav.write("test.wav", samplerate, wave)
