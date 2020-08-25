@@ -10,3 +10,5 @@
 
 
 [Frequency Spectrum](https://www.youtube.com/watch?v=r18Gi8lSkfM)
+
+[Fourrier Series in Drawing](https://www.youtube.com/watch?v=ds0cmAV-Yek)
